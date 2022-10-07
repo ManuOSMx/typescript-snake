@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taller - TypeScript | ManuOS</title>
 </head>
-<body>
+<body style="display: flex; flex-direction: column; align-items: center; text-align: center;">
     <!--Get UserName-->
     <div>
         <form action="" method="get">
@@ -19,8 +19,12 @@
         <p>¿Cuál es tu nombre?</p>
     </div>
     <!--Game field-->
-    <canvas id = "game" width="400" height="400"></canvas>
+    <div id="div-counter">
+        
+    </div>
+    <div style="max-width: 600px; max-height: 600px; ">
+        <canvas id = "game" width="400px" height="400px"></canvas>
+    </div>
     <script src="./main.js"></script>
-    <script src="./snake.js"></script>
 </body>
 </html>
