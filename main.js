@@ -1,13 +1,11 @@
 "use strict";
 const replaceDiv = document.getElementById("replace");
-
-//Get the Name of the Player
 function getData() {
     const getName = document.getElementById("get-name").value;
     replaceDiv.innerHTML = `
-        <h1>Snake Game</h1>
-        <p>¡Hola <b>${getName}</b>, un gusto saludarte!</p>
-        <p>Para jugar, da click a cualquier flecha.</p>
+    <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue;">Snake Game</h2>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue;">¡Hola <b>${getName}</b>, un gusto saludarte!</p>
+        <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue;">Para jugar, da click a cualquier flecha.</p>
     `;
 }
 //Press Any Arrow to start the game
@@ -51,7 +49,7 @@ function counterFunct(count) {
     counter++;
     const div_counter = document.getElementById("div-counter");
     div_counter.innerHTML = '';
-    div_counter.innerHTML += `<p>Points: ${counter} </p>`;
+    div_counter.innerHTML += `<p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: aliceblue;">Points: <b>${counter}</b> </p>`;
 }
 function game() {
     px += xv;
